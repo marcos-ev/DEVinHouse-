@@ -1,0 +1,31 @@
+#users {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user-card {
+  width: 20%;
+  margin: 10px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+h2 {
+  margin-top: 10px;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+span {
+  font-weight: bold;
+}

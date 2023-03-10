@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="./app.js" async></script>
+  <title>Projeto Bancário</title>
+</head>
+<body>
+  <header>
+        <h1>Cadastro de Usuário</h1>
+  </header>
+  <main>
+    <form action="" id="formCadastro">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Escreva seu nome" required>
+      <br><br>
+      <label for="cpf">CPF:</label>
+      <input type="text" id="cpf" name="cpf" placeholder="999.999.999-99" required>
+      <br><br>
+      <label for="celular">Celular:</label>
+      <input type="text" id="celular" placeholder="( ) 99999-9999" name="celular" required>
+      <br><br>
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" placeholder="****" required>
+      <br><br>
+      <label for="confirmaSenha">Confirmação da Senha:</label>
+      <input type="password" id="confirmaSenha" name="confirmaSenha" placeholder="Digite a senha novamente" required>
+      <br><br>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </form>
+
+    <form  id="operations" action="">
+      <label for="conta">Conta:</label>
+      <input type="text" id="conta" name="conta" required>
+      <br><br>
+      <label for="operacao">Operação:</label>
+      <select id="operacao" name="operacao">
+        <option value="saque">Saque</option>
+        <option value="deposito">Depósito</option>
+        <option value="consultaSaldo">Consulta Saldo</option>
+      </select>
+      <br><br>
+      <label for="valor">Valor:</label>
+      <input type="text" id="valor" name="valor" required>
+      <br><br>
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
+      <br><br>
+      <input type="submit" value="Confirmar">
+      <input type="reset" value="Limpar">
+    </form>
+  </main>
+  <footer>
+    <p>Empresa DEVinHouse Bank - Todos os direitos reservados</p>
+    <p>Endereço: Rua 123, Bairro 888, Cidade 888</p>
+    <p>Telefone: (48) 1234-5678</p>
+  </footer>
+</body>
+</html>
