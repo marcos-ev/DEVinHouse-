@@ -5,8 +5,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 
-private url =""
 export class PersonagensStarWarsService {
-
+  
+  private url ="http://localhost:3000/personagens";
   constructor(private_httpClient: HttpClient) { }
 }
