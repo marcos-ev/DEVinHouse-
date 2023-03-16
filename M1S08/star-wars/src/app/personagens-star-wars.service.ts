@@ -19,8 +19,4 @@ public getPersonagens():Observable<PersonagemClass[]> {
   return this.HttpClient.get<PersonagemClass[]>(`${API_PATH}`)
 }
 
-public getPersonagens( {
-  return this._httpClient.get<PersonagemClass[]>(this.url)
-  }
 
-)
