@@ -1,1 +1,5 @@
-<p>home works!</p>
+<div class="gallery">
+  <div *ngFor="let gender of genders" class="row">
+    <app-category [series]="series" [gender]="gender"></app-category>
+  </div>
+</div>

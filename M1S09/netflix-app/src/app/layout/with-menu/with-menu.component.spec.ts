@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LayoutwithMenuComponent } from './layoutwith-menu.component';
+import { WithMenuComponent } from './with-menu.component';
 
-describe('LayoutwithMenuComponent', () => {
-  let component: LayoutwithMenuComponent;
-  let fixture: ComponentFixture<LayoutwithMenuComponent>;
+describe('WithMenuComponent', () => {
+  let component: WithMenuComponent;
+  let fixture: ComponentFixture<WithMenuComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LayoutwithMenuComponent ]
+      declarations: [ WithMenuComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(LayoutwithMenuComponent);
+    fixture = TestBed.createComponent(WithMenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
