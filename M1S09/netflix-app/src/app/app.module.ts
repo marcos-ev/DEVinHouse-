@@ -8,6 +8,8 @@ import { CardComponent } from './components/card/card.component';
 import { SerieComponent } from './pages/serie/serie.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './pages/login/login.component';
+import { LayoutfullScreenComponent } from './layout/full-screen/layoutfull-screen.component';
+import { LayoutwithMenuComponent } from './layout/with-menu/layoutwith-menu.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { LoginComponent } from './pages/login/login.component';
     CardComponent,
     SerieComponent,
     HeaderComponent,
-    LoginComponent
+    LoginComponent,
+    LayoutfullScreenComponent,
+    LayoutwithMenuComponent
   ],
   imports: [
     BrowserModule,
