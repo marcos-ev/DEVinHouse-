@@ -1,19 +1,19 @@
-// exercicio 1
 class Funcionario {
-constructor ( cpf,nomeCompleto, salario) {
-  this.cpf = cpf;
-  this.nomeCompleto= nomeCompleto;
-  this.salario = salario;
+  constructor(cpf, nomeCompleto, salario) {
+    this.cpf = cpf;
+    this.nomeCompleto = nomeCompleto;
+    this.salario = salario;
+  }
+
+  promover(percentual) {
+    const aumento = (percentual / 100) * this.salario;
+    this.salario += aumento;
+  }
+
+  validarCPF() {
+    // Lógica de validação do CPF
+    // Retornar true se for válido, false caso contrário
+  }
 }
 
-promover(percentual) {
-  this.salario*=this.salario* (percentual / 100)
-}
-}
-
-const ada = new Funcionario ("528.442.040-31", "Ada Lovace", 1000);
-console.log(ada.salario);
-ada.promover (50)
-
-console.log(ada.salario);
-
+export default Funcionario;

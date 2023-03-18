@@ -1,4 +1,4 @@
-import Funcionario from './Funcionario.js';
+import Funcionario from './Funcionario';
 import { validate } from 'gerador-validador-cpf'
 
 

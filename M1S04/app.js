@@ -56,59 +56,59 @@ operacao.addEventListener("change", function () {
     valor.disabled = false;
   }
 });
-// Função para consulta do saldo
+
 function consultarSaldo(conta) {
-  // Verifica se a conta existe
+  
   if (!contas[conta]) {
     alert("Conta inválida");
     return;
   }
 
-  // Obtém o saldo da conta
+ 
   const saldo = contas[conta].saldo;
 
-  // Exibe a mensagem com o saldo atual da conta
+  
   alert("Seu saldo atual é de R$ " + saldo);
 }
 
-// Função para depósito
+
 function depositar(conta, valor) {
-  // Verifica se a conta existe
+  
   if (!contas[conta]) {
     alert("Conta inválida");
     return;
   }
 
-  // Verifica se o valor é maior que zero
+  
   if (valor <= 0) {
     alert("Valor inválido");
     return;
   }
 
-  // Incrementa o saldo da conta
+ 
   contas[conta].saldo += valor;
 
-  // Exibe a mensagem com a informação de depósito efetuado com sucesso e o novo saldo atual da conta
+  
   alert("Depósito de R$ " + valor + " efetuado com sucesso. Seu saldo atual é de R$ " + contas[conta].saldo);
 }
 
-// Evento ao submit do formulário
+
 document.getElementById("formulario").addEventListener("submit", function(event) {
   event.preventDefault();
 
-  // Obtém os valores dos campos do formulário
+  
   const conta = document.getElementById("conta").value;
   const senha = document.getElementById("senha").value;
   const operacao = document.querySelector("input[name=operacao]:checked").value;
   const valor = parseFloat(document.getElementById("valor").value);
 
-  // Valida se a conta existe e a senha está correta
+  
   if (!contas[conta] || contas[conta].senha != senha) {
     alert("Conta ou senha inválidos");
     return;
   }
 
-  // Verifica qual é a operação selecionada
+  
   if (operacao === "consultar") {
     consultarSaldo(conta);
   } else if (operacao === "depositar") {
@@ -122,7 +122,7 @@ function sacar(conta, valor) {
     return;
   }
 
-  // Verificar se a conta existe
+  
   let saldo = 0;
   for (let i = 0; i < contas.length; i++) {
     if (contas[i].numero === conta) {
@@ -135,13 +135,13 @@ function sacar(conta, valor) {
     return;
   }
 
-  // Verificar se há saldo suficiente
+  
   if (saldo < valor) {
     alert("Saldo insuficiente. Seu saldo atual é de " + saldo + ".");
     return;
   }
 
-  // Realizar o saque
+ 
   for (let i = 0; i < contas.length; i++) {
     if (contas[i].numero === conta) {
       contas[i].saldo -= valor;
